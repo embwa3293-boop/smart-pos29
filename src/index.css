@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 192 67% 11%;
+    --foreground: 0 0% 75%;
+    --card: 192 57% 18%;
+    --card-foreground: 0 0% 75%;
+    --popover: 192 57% 18%;
+    --popover-foreground: 0 0% 75%;
+    --primary: 0 0% 75%;
+    --primary-foreground: 192 67% 11%;
+    --secondary: 192 57% 18%;
+    --secondary-foreground: 0 0% 75%;
+    --muted: 192 57% 18%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 192 54% 27%;
+    --accent-foreground: 0 0% 75%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 75%;
+    --input: 192 57% 18%;
+    --ring: 0 0% 75%;
+    --radius: 0.5rem;
+
+    --void-navy: #08232A;
+    --true-silver: #C0C0C0;
+    --surface-navy: #133E47;
+    --hover-teal: #205A68;
+  }
+
+  body {
+    @apply bg-[var(--void-navy)] text-[var(--true-silver)];
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    @apply border-[rgba(192,192,192,0.1)];
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-body {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+  }
+
+  .text-silver {
+    color: var(--true-silver);
+  }
+
+  .bg-void {
+    background-color: var(--void-navy);
+  }
+
+  .bg-surface {
+    background-color: var(--surface-navy);
+  }
+
+  .bg-hover-teal {
+    background-color: var(--hover-teal);
+  }
+
+  .border-silver-10 {
+    border-color: rgba(192, 192, 192, 0.1);
+  }
+
+  .border-silver-20 {
+    border-color: rgba(192, 192, 192, 0.2);
+  }
+
+  .border-silver-30 {
+    border-color: rgba(192, 192, 192, 0.3);
+  }
+
+  .border-silver-40 {
+    border-color: rgba(192, 192, 192, 0.4);
+  }
+
+  .text-silver-60 {
+    color: rgba(192, 192, 192, 0.6);
+  }
+
+  .shadow-elevated {
+    box-shadow: 0 4px 24px rgba(8, 35, 42, 0.4);
+  }
+
+  .shadow-modal {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  }
+
+  .glow-silver {
+    text-shadow: 0 0 30px rgba(192, 192, 192, 0.3);
+  }
+
+  .hero-gradient {
+    background: linear-gradient(to left, rgba(8, 35, 42, 0.85) 0%, rgba(8, 35, 42, 0.4) 50%, transparent 100%);
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgba(192, 192, 192, 0.2);
+    border-radius: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: rgba(192, 192, 192, 0.4);
+  }
+}
